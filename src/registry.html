@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QQ注册</title>   
+    <link rel="stylesheet" href="stylesheets/registry.css">
+</head>
+
+<body>
+    <!-- 引入jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <div class="logo"></div>
+    <div class="QQlogo">QQ</div>
+    <!-- 注册本体 -->
+    <div class="big">
+        <form class="all" action="http://10.31.152.18/DNF/php/registry.php" method="post">
+            <p class="welcome">欢迎注册QQ</p>
+            <p class="every">每一天，乐在沟通</p>
+            <!-- 昵称 -->
+            <div id="yourName">
+                <input type="text" placeholder="昵称" class="name" name="username">
+                <div class="nameHint"></div>
+            </div>
+
+            <!-- 密码 -->
+            <div id="yourPass">
+                <input type="text" placeholder="密码" class="pass" name="password">
+                <div class="passHint"></div>
+            </div>
+
+            <!-- 注册按钮 -->
+            <input type='submit' value='立即注册' class="btn" name="submit">
+        </form>
+    </div>
+
+    <!-- 引入js -->
+    <script src="../src/script/registry.js"></script>
+</body>
+
+</html>

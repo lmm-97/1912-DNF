@@ -1,0 +1,763 @@
+$page_width: 1903px; //页面宽度
+$page_container: 100%; //页面高度自适应
+$fontsize12: 12px; //字体大小12px;
+$fontsize14: 14px; //字体大小14px;
+$fontsize16: 16px; //字体大小16px;
+$fontsize18: 18px; //字体大小18px;
+@import "compass/reset"; //重置浏览器的默认样式
+body {
+  font-size: 12px;
+  background: #fff;
+  font-family: "微软雅黑", "宋体";
+}
+// a的公共样式
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+@mixin width_margin($width: 1280px, $margin: 0 auto) {
+  width: $width;
+  margin: 0 auto;
+}
+
+$colors: (
+  a: #ccc,
+  //顶部
+    b: #cc0,
+  //头部
+    c: #bf040f,
+  //主导航栏
+    d: #d45,
+  //轮播图
+    e: #ddd,
+  //三个广告栏
+    f: #aee,
+  //大广告
+    g: #daa,
+  //主体部分1
+    h: #eef,
+  //主体部分2
+    i: #acc,
+  //尾部
+);
+
+.topUrl {
+  //顶部背景图
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+.bg {
+  height: 166px;
+  background: url(../images/index_01.png) center 0px no-repeat;
+}
+#top {
+  //顶部
+
+  height: 34px;
+  // background: map-get($colors, a);
+  @include width_margin();
+  width: 1120px;
+  color: #666;
+  line-height: 34px;
+}
+.top_left {
+  float: left;
+}
+.top_left a {
+  //顶部左边列表
+  color: #666;
+  padding-right: 5px;
+  float: left;
+}
+.top_right {
+  //顶部右边列表
+  float: right;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+.top_right .QQ {
+  float: left;
+  padding-left: 19px;
+  margin-right: 10px;
+  color: #a01f23;
+  background: url(../images/right.png) -8px -33px no-repeat;
+}
+.top_right .list {
+  float: left;
+  width: 62px;
+  padding-right: 0px;
+  padding-left: 8px;
+  cursor: default; //普通光标
+  margin-right: 0px;
+  margin-left: 6px;
+  background: #fff;
+  position: relative;
+}
+.myOrder {
+  position: absolute;
+  width: 70px;
+  height: 130px;
+  background: #fff;
+  top: 34px;
+  right: 0px;
+}
+.top_right .list a {
+  display: block;
+  text-align: left;
+  color: #333;
+  margin: 0 auto;
+  width: 100%;
+}
+.phone {
+  //手机周边
+  background: url(../images/right.png) -12px -67px no-repeat;
+  float: left;
+  width: 58px;
+  text-align: right;
+  .wechat_pic {
+    background: url(../images/weixin.png) no-repeat;
+    display: none;
+    width: 150px;
+    height: 182px;
+    position: absolute;
+    right: 0px;
+    top: 30px;
+  }
+}
+
+#header {
+  //头部
+  width: 100%;
+  height: 130px;
+}
+.headerMain {
+  height: 130px;
+  width: 1164px;
+  margin: 0 auto;
+  position: relative;
+  .soupic {
+    //搜索栏右边跳转图片
+    height: 130px;
+    width: 258px;
+    float: left;
+  }
+}
+.search {
+  //搜索框
+  height: 46px;
+  float: left;
+  margin-left: 120px;
+  margin-top: 38px;
+  .searchMain {
+    //搜索框主体
+    width: 322px;
+    height: 46px;
+    position: relative;
+    .input {
+      width: 260px;
+      height: 32px;
+      border: 1px solid #e00011;
+      padding: 2px 4px 2px 4px;
+      color: #fff;
+      line-height: 32px;
+      font-size: 14px;
+      border-right: 0px;
+      background: none;
+      vertical-align: middle;
+    }
+    .btn {
+      display: inline-block;
+      width: 42px;
+      height: 38px;
+      background: url(../images/menu.png) no-repeat -10px -18px #e00011;
+      vertical-align: middle;
+      border: 0px;
+      margin-left: -4px;
+      cursor: pointer;
+    }
+  }
+}
+.allkey {
+  position: absolute;
+  z-index: 100;
+  top: 84px;
+  left: 378px;
+}
+.keyward {
+  color: #f00;
+  padding-right: 15px;
+  font-size: 14px;
+}
+
+#nav {
+  //主导航栏
+  width: 100%;
+  height: 60px;
+  background: map-get($colors, c);
+  .navMain {
+    //导航栏主体
+    width: 1120px;
+    height: 60px;
+    margin: 0px auto;
+    span {
+      background: url(../images/menu.png) -2px -50px no-repeat;
+      display: block;
+      float: left;
+      width: 200px;
+      height: 60px;
+      line-height: 60px;
+      color: #fff;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bolder;
+    }
+    a {
+      float: Left;
+      font-size: 18px;
+      line-height: 60px;
+      color: #fff;
+      font-weight: bolder;
+      padding: 0px 28px;
+      background: url(../images/menu_xian.png) left center no-repeat;
+      &:hover {
+        color: #fffb80;
+      }
+    }
+  }
+}
+// 轮播图
+#lunbo {
+  width:100%;
+  height: 420px;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer;
+}
+#lunbo ul li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+}
+#lunbo ul li img {
+  width:100%;
+  height: 420px;
+  display: block;
+}
+#lunbo ol {
+  position: absolute;
+  top: 395px;
+  left: 470px;
+  z-index: 2000;
+}
+.allDiv ol li {
+  float: left;
+  width: 68px;
+  height: 8px;
+  background: #6d6d6d;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.allDiv ol li.active {
+  background: #ec4828;
+}
+
+//总的div
+.allDiv {
+  width: 1120px;
+  height: 420px;
+  margin: 0 auto;
+  position: relative;
+  // background: rgba(45, 159, 190, 0.7);
+}
+//中间跳转a标签
+.skip {
+  display: block;
+  width: 730px;
+  height: 420px;
+  position: absolute;
+  left: 200px;
+  z-index: -10;
+}
+// 左边div
+.orange {
+  width: 200px;
+  height: 420px;
+  background: #ef5c27;
+  position: absolute;
+  left: 0;
+  li {
+    list-style: none;
+    width: 100%;
+    height: 104px;
+    border-top: 1px solid #e3450c;
+    position: relative;
+    &:hover:nth-child(-n + 3) {
+      background: #e33a19;
+    }
+  }
+  .first {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bolder;
+    display: block;
+    position: absolute;
+    left: 48px;
+    top: 25px;
+  }
+  .aShort {
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    left: 30px;
+    top: 57px;
+    .small {
+      color: #fff;
+      padding-right: 16px;
+      font-size: 14px;
+    }
+  }
+  .other {
+    //需要溢出隐藏的li
+    background: #ef5c27;
+    overflow: hidden;
+    position: relative;
+    &:hover {
+      overflow: visible;
+    }
+    .overDiv {
+      width: 330px;
+      height: 105px;
+      background: #ef5c27;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3000;
+      &:hover {
+        background: #e33a19;
+      }
+    }
+    .aLong {
+      font-size: 14px;
+      color: #fff;
+      position: absolute;
+      left: 30px;
+      top: 57px;
+      white-space: nowrap;
+      .small {
+        color: #fff;
+        padding-right: 16px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.icon {
+  //小图标
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  left: 28px;
+  top: 12px;
+}
+.gift {
+  background: url(../images/nav_bj.png) -7px -96px no-repeat;
+}
+.model {
+  background: url(../images/nav_bj.png) -6px -52px no-repeat;
+}
+.palyer {
+  background: url(../images/nav_bj.png) -7px -6px no-repeat;
+}
+//领取游戏道具
+.orange li .get {
+  position: absolute;
+  left: 17px;
+  top: 30px;
+  display: block;
+  width: 164px;
+  height: 36px;
+  background: #fff;
+  line-height: 36px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: border;
+  color: #ec4828;
+  &:hover {
+    background: #fffb80;
+    text-decoration: none;
+  }
+}
+//右边div
+.gongGao {
+  width: 190px;
+  height: 420px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 100;
+  //上方公告
+  .new {
+    height: 173px;
+    padding: 10px 12px 0px 12px;
+    font-size: 12px;
+    background: rgba(255, 255, 255, 0.7);
+    h3 {
+      line-height: 32px;
+      font-size: 14px;
+      height: 32px;
+      background: url(../images/dian2.png) 0px center no-repeat;
+      display: block;
+      padding-left: 10px;
+    }
+    a {
+      height: 24px;
+      line-height: 24px;
+      overflow: hidden;
+      color: #333;
+      display: block;
+      font-size: 12px;
+    }
+    .red {
+      color: #bf040f;
+      font-weight: bolder;
+    }
+  }
+}
+//下方图片
+.hot {
+  background: rgba(255, 255, 255, 0.7);
+  width: 190px;
+  height: 236px;
+  margin-top: 1px;
+}
+// 左右箭头
+#left {
+  background: url(../images/next.png) -10px -10px no-repeat;
+  width: 48px;
+  height: 103px;
+  position: absolute;
+  left: 204px;
+  top: 150px;
+  z-index: 1000;
+  &:hover {
+    background: url(../images/next.png) -10px -123px no-repeat;
+  }
+}
+
+#right {
+  background: url(../images/next.png) -68px -10px no-repeat;
+  width: 48px;
+  height: 103px;
+  position: absolute;
+  right: 195px;
+  top: 150px;
+  z-index: 1000;
+  &:hover {
+    &:hover {
+      background: url(../images/next.png) -68px -123px no-repeat;
+    }
+  }
+}
+
+#threeAd {
+  //三个广告栏
+  // width: 100%;
+  height: 190px;
+  background: map-get($colors, e);
+  @include width_margin();
+  width: 1120px;
+  margin-top: 40px;
+  position: relative;
+  a {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 190px;
+    width: 366px;
+    overflow: hidden;
+    img {
+      width: 366px;
+      height: 190px;
+    }
+  }
+  a:nth-child(2) {
+    left: 376px;
+    top: 0px;
+  }
+  a:nth-child(3) {
+    left: 754px;
+    top: 0px;
+  }
+}
+
+#bigAd {
+  //大广告
+  // width: 100%;
+  height: 600px;
+  background: map-get($colors, f);
+  @include width_margin();
+  width: 1120px;
+  //大广告渲染
+  a {
+    margin-top: 30px;
+    position: relative;
+    height: 600px;
+    display: block;
+    background: lightsteelblue;
+    img {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+#section_1 {
+  //主体部分1
+  // width: 100%;
+  height: 800px;
+  // background: map-get($colors, g);
+  @include width_margin();
+  width: 1120px;
+  // 渲染
+  ul {
+    width: 1130px;
+    li {
+      list-style: none;
+      margin-right: 10px;
+      float: left;
+      width: 272px;
+      height: 400px;
+      padding-top: 2px;
+      position: relative;
+      // background: lightslategrey;
+      //渲染出来的图片样式
+      img {
+        width: 272px;
+        height: 290px;
+        display: block;
+        margin-bottom: 16px;
+        // background: #f6f6f6;
+      }
+      //渲染出来的标题
+      .linkTitle {
+        margin: 0 auto;
+        line-height: 28px;
+        height: 28px;
+        width: 240px;
+        overflow: hidden;
+        text-align: center;
+        font-size: 16px;
+        display: block;
+        color: #333;
+      }
+      //渲染出来的价格主体
+      .price {
+        display: block;
+        margin: 10px auto 0px auto;
+        width: 240px;
+        overflow: hidden;
+        text-align: center;
+        font-size: 14px;
+        color: #ee4727;
+        padding-left: 15px;
+      }
+    }
+  }
+}
+
+#section_2 {
+  //主体部分2
+  // width: 100%;
+  height: 452px;
+  // background: map-get($colors, h);
+  @include width_margin();
+  width: 1120px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  position: relative;
+  //渲染
+  a {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+  }
+  .zuo {
+    top: 0;
+    left: 0;
+    // background: lightsteelblue;
+  }
+  .you {
+    top: 0px;
+    left: 570px;
+    // background: mediumseagreen;
+  }
+  img {
+    width: 550px;
+    height: 452px;
+  }
+}
+
+#footer {
+  //尾部
+  width: 100%;
+  height: 651px;
+  background: #f4f4f4;
+  padding-top: 50px;
+  //广告
+  .bottomAd {
+    width: 1120px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    img {
+      width: 1120px;
+      height: 120px;
+    }
+  }
+  .seven {
+    background: #dedede;
+    margin-bottom: 40px;
+    ul {
+      width: 960px;
+      height: 80px;
+      margin: 0 auto;
+      li {
+        list-style: none;
+        float: left;
+        height: 80px;
+        h3 {
+          padding-top: 15px;
+          color: #282725;
+          line-height: 26px;
+        }
+      }
+      .ulLi1 {
+        background: url(../images/bottom.png) 0px -246px no-repeat;
+        width: 208px;
+        font-size: 14px;
+        color: #666;
+        padding-left: 72px;
+      }
+      .ulLi2 {
+        background: url(../images/bottom.png) 0px 0px no-repeat;
+        width: 218px;
+        font-size: 14px;
+        color: #666;
+        padding-left: 62px;
+      }
+      .ulLi3 {
+        background: url(../images/bottom.png) 0px -79px no-repeat;
+        width: 214px;
+        font-size: 14px;
+        color: #666;
+        padding-left: 66px;
+      }
+    }
+  }
+}
+.info {
+  width: 1120px;
+  margin: 0 auto;
+  ul {
+    color: #666;
+    height: 180px;
+    border-bottom: 1px solid #dedede;
+    // background: lightslategray;
+    li {
+      list-style: none;
+      height: 166px;
+      float: left;
+      padding-left: 16px;
+      font-size: 14px;
+      h3 {
+        display: block;
+        line-height: 30px;
+        font-size: 16px;
+        color: #000;
+        a:hover {
+          color: #a01f23;
+        }
+      }
+      a {
+        color: #666;
+        display: block;
+        line-height: 28px;
+      }
+    }
+  }
+}
+.shop {
+  width: 170px;
+}
+.dis {
+  width: 198px;
+}
+.after {
+  width: 170px;
+}
+.ser {
+  width: 260px;
+  .span {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    line-height: 28px;
+  }
+}
+.QR {
+  width: 210px;
+  height: 150px;
+  margin-left: 28px;
+  border-left: 1px solid #dedede;
+  position: relative;
+  div {
+    position: absolute;
+    width: 126px;
+    height: 30px;
+    padding-top: 124px;
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+    background: url(../images/bottom.png) -9px -416px no-repeat;
+    left: 30px;
+    top: 0px;
+    span {
+      display: block;
+      margin-top: 5px;
+    }
+  }
+}
+// 底部版权
+.butMain {
+  height: 120px;
+  width: 1120px;
+  margin: 0 auto;
+  .main1 {
+    width: 518px;
+    padding-left: 248px;
+    padding-top: 30px;
+    line-height: 18px;
+    color: #333;
+    margin: 0 auto;
+    background: url(../images/bottom.png)-8px -308px no-repeat;
+  }
+}
+//右边悬浮
+.sus {
+  width: 46px;
+  height: 321px;
+  position: fixed;
+  top: calc(50% - 160px);
+  right: 0px;
+  background: #282725;
+  z-index: 200;
+}

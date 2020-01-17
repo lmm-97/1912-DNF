@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车详情页</title>
+    <link rel="stylesheet" href="../src/stylesheets/index1.css">
+    <link rel="stylesheet" href="../src/stylesheets/details.css">
+</head>
+
+<body>
+    <!-- 引入jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 顶部的背景图 -->
+    <div class="topUrl">
+        <div class="bg"></div>
+    </div>
+    <!-----------------------------------顶部----------------------------------->
+    <div id="top">
+        <!-- 顶部的左边 -->
+        <div class="top_left"><a href="https://dnfcity.qq.com/" target="_blank">欢迎来到dnf官方商城</a></div>
+        <!-- 顶部的右边 -->
+        <div class="top_right">
+            <!-- 这里的地址写自己做的登录页面 -->
+            <a class="QQ" href="http://10.31.152.18/DNF/src/login.html" target="_blank">请QQ登录</a>
+            <!-- 我的订单 -->
+            <div class="list">
+                我的订单
+                <div class="myOrder" style="display:none">
+                    <a href="https://dnfcity.qq.com/servlet/login?returnUrl=https://dnfcity.qq.com/">我的订单</a>
+                    <a href="https://dnfcity.qq.com/servlet/login?returnUrl=https://dnfcity.qq.com/">我的收藏</a>
+                    <a href="https://dnfcity.qq.com/servlet/login?returnUrl=https://dnfcity.qq.com/">我的优惠</a>
+                    <a href="https://dnfcity.qq.com/servlet/login?returnUrl=https://dnfcity.qq.com/">我的CDK</a>
+                </div>
+            </div>
+            <!-- 周边公告 -->
+            <div class="list">
+                周边公告
+                <div class="notice" style="display:none">
+                    <a href="https://dnfcity.qq.com/html/notice_382.html">周边商城满赠礼包升级通知</a>
+                    <a href="https://dnfcity.qq.com/html/notice_374.html">延迟发货公告</a>
+                    <a href="https://dnfcity.qq.com/html/notice_375.html">关于妙趣盒售卖事项的相关说明</a>
+                    <a href="https://www.wenjuan.com/s/qMJrMz0/">周边商城用户体验调查</a>
+                    <a href="https://dnfcity.qq.com/html/notice_356.html">周边商城产品销售权说明</a>
+                </div>
+            </div>
+            <!-- 帮助中心 -->
+            <div class="list">
+                帮助中心
+                <div class="help" style="display:none">
+                    <a href="https://dnfcity.qq.com/html/notice_382.html">购物指南</a>
+                    <a href="https://dnfcity.qq.com/help/helpCenter.html?itemId=11&captionType=whelp">配送方式</a>
+                    <a href="https://dnfcity.qq.com/help/helpCenter.html?itemId=46&captionType=whelp">售后服务</a>
+                </div>
+            </div>
+            <!-- 手机周报 -->
+            <div class="phone">
+                手机周边
+                <!-- 微信二维码 -->
+                <div class="wechat_pic"></div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------头部----------------------------------->
+    <div id="header">
+        <!-- 头部中间 -->
+        <div class="headerMain">
+            <!-- 搜索栏右边跳转图片 -->
+            <div class="soupic">
+                <a href="https://dnfcity.qq.com/index.html">
+                    <img src="images/dnflogo.png" alt="">
+                </a>
+            </div>
+            <!-- 搜索框 -->
+            <div class="search">
+                <div class="searchMain">
+                    <input type="text" class="input">
+                    <button class="btn"></button>
+                </div>
+            </div>
+            <!-- 搜索框下关键字 -->
+            <div class="allkey">
+                <a class="keyward"
+                    href="https://dnfcity.qq.com/ware/searchProduct.html?q=%E5%85%B8%E8%97%8F%E5%8C%85&searchType=1&keyType=1&"
+                    title="典藏包" target="_blank">典藏包</a>
+                <a class="keyward"
+                    href="https://dnfcity.qq.com/ware/searchProduct.html?q=%E6%89%8B%E5%8A%9E&searchType=1&keyType=1&"
+                    title="手办" target="_blank">手办</a>
+                <a class="keyward"
+                    href="https://dnfcity.qq.com/ware/searchProduct.html?q=%E8%B5%9B%E4%B8%BD%E4%BA%9A&searchType=1&keyType=1&"
+                    title="赛利亚" target="_blank">赛利亚</a>
+                <a class="keyward"
+                    href="https://dnfcity.qq.com/ware/searchProduct.html?q=%E9%85%8D%E9%A5%B0&searchType=1&keyType=1&"
+                    title="配饰" target="_blank">配饰</a>
+                <a class="keyward"
+                    href="https://dnfcity.qq.com/ware/searchProduct.html?q=%E6%89%8B%E8%A1%A8&searchType=1&keyType=1&"
+                    title="手表" target="_blank">手表</a>
+                <a class="keyward"
+                    href="https://dnfcity.qq.com/ware/searchProduct.html?q=%E6%AF%9B%E7%BB%92&searchType=1&keyType=1&"
+                    title="毛绒" target="_blank">毛绒</a>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------主导航栏----------------------------------->
+    <div id="nav">
+        <!-- 导航栏主体 -->
+        <div class="navMain">
+            <span>勇士周边类目</span>
+            <a href="https://dnfcity.qq.com/ware/productList.html" target="_blank">全部商品</a>
+            <a href="https://dnfcity.qq.com/ware/productList.html?lft=199&rgt=208&layerNum=1&pare=0&categoryTagId=199208"
+                target="_blank">礼包收藏</a>
+            <a href="https://dnfcity.qq.com/servlet/login?returnUrl=https://dnfcity.qq.com/user/daoju.html"
+                target="_blank">领取游戏道具</a>
+            <a href="https://dnfcity.qq.com/zhongchou/main.html" target="_blank">土罐市集</a>
+            <a href="https://dnfcity.qq.com/zhuanti/2019/0718mh_collect.html" target="_blank">妙趣盒·点亮大集合</a>
+        </div>
+    </div>
+
+
+
+    <!---------------------------------------------------------------详情页-------------------------------------------------------------------->
+    <div class="goodsinfo">
+        <img alt="" class="pic">
+
+        <div class="wrap">
+            <div id="spic">
+                <img src="" alt="">
+                <div id="sf"></div>
+            </div>
+            <div id="bf">
+                <img src="" alt="" id="bpic">
+            </div>
+            <div id="ulist">
+                <!-- 左按钮 -->
+                <a href="javascript:;" id="leftkey">&lt;</a>
+                <div id="list">
+                    <ul>
+
+                    </ul>
+                </div>
+                <!-- 左按钮 -->
+                <a href="javascript:;" id="rightkey">&gt;</a>
+            </div>
+        </div>
+        <div class="goodsinfo-word">
+            <div class="p-name">
+                <a class="loadtitle" href="##"></a>
+                <!-- 描述 -->
+                <div class="miaoshu"></div>
+            </div>
+            <!-- 价格标签 -->
+            <div class="p-price"><strong><em class="jia">￥</em><i class="loadpcp"></i></strong></div>
+            <div class="p-btn">
+                <input type="text" id="count" value="1" />
+                <div class="btn">
+                    <div class="push">
+                        <a href="##">加入购物车</a>
+                    </div>
+                    
+                    <div class="box">
+                        <a href="cartlist.html">
+                            进入购物车
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------------------------------------------尾部----------------------------------------------------------------->
+    <div id="footer">
+        <!-- 广告 -->
+        <div class="bottomAd">
+            <a href="https://dnfcity.qq.com/html/wareInfo_1651.html" target="_blank">
+                <img src="https://img.dnfcity.qq.com/goodsImages/15adimg/ceshi/bottom_ad.jpg" alt=""></a>
+        </div>
+        <!-- 7天无理由 -->
+        <div class="seven">
+            <ul>
+                <li class="ulLi1">
+                    <h3>赠送超值游戏礼包</h3>
+                    "方便您畅爽体验游戏"
+                </li>
+                <li class="ulLi2">
+                    <h3>专属周边设计</h3>
+                    "精选游戏素材 · 独特设计"
+                </li>
+                <li class="ulLi3">
+                    <h3>7天无理由退换货</h3>
+                    "为您提供售后无忧保障"
+                </li>
+            </ul>
+        </div>
+        <!-- 信息 -->
+        <div class="info">
+            <ul>
+                <!-- 购物指南 -->
+                <li class="shop">
+                    <h3><a href="https://dnfcity.qq.com/help/helpCenter.html?itemId=44&captionType=whelp"
+                            style="color: #282725;" target="_blank">购物指南</a></h3>
+                    <a href="https://dnfcity.qq.com/help/helpCenter.html?itemId=44&captionType=whelp"
+                        target="_blank">常见问题</a>
+                    <a href="https://dnfcity.qq.com/help/helpCenter.html?itemId=15&captionType=whelp"
+                        target="_blank">如何查看订单</a>
+                    <a href="https://dnfcity.qq.com/help/helpCenter.html?itemId=14&captionType=whelp"
+                        target="_blank">网站订购流程</a>
+                    <a href="https://dnfcity.qq.com/help/helpCenter.html?itemId=13&captionType=whelp"
+                        target="_blank">用户登录及注册</a>
+                </li>
+                <!-- 配送方式 -->
+                <li class="dis">
+                    <h3><a href="https://dnfcity.qq.com/help/helpCenter.html?itemId=47&captionType=whelp"
+                            style="color: #282725;" target="_blank">配送方式</a></h3>
+                    <a href="https://dnfcity.qq.com/help/helpCenter.html?itemId=47&captionType=whelp"
+                        target="_blank">全场满200元免运费</a>
+                    <a href="https://dnfcity.qq.com/help/helpCenter.html?itemId=11&captionType=whelp"
+                        target="_blank">配送范围及运费</a>
+                </li>
+                <!-- 售后服务 -->
+                <li class="after">
+                    <h3><a href="https://dnfcity.qq.com/help/helpCenter.html?itemId=46&captionType=whelp"
+                            style="color: #282725;" target="_blank">售后服务</a></h3>
+                    <a href="https://dnfcity.qq.com/help/helpCenter.html?itemId=10&captionType=whelp"
+                        target="_blank">7天无理由退换货</a>
+                    <a href="https://dnfcity.qq.com/help/helpCenter.html?itemId=9&captionType=whelp"
+                        target="_blank">如何办理退换货</a>
+                    <a href="https://dnfcity.qq.com/help/helpCenter.html?itemId=10&captionType=whelp"
+                        target="_blank">换货政策说明</a>
+                </li>
+                <!-- 客服中心 -->
+                <li class="ser">
+                    <h3>
+                        客服中心
+                        <span style="color: #666;font-size: 12px;">(9:00 - 24:00)</span>
+                    </h3>
+                    <span class="span">客服QQ:800093207</span>
+                    <span class="span">
+                        申诉邮箱:
+                        <span style="font-size: 11px;">dnfcity@hetaionline.com</span>
+                    </span>
+                </li>
+                <!-- 二维码 -->
+                <li class="QR">
+                    <div>
+                        <span>扫码关注微信周边</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--底部版权信息 -->
+        <div class="butMain">
+            <div class="main1">
+                深圳市合泰文化发展有限公司提供客服支持 | 客服邮箱：dnfcity@hetaionline.com
+                <br>
+                Copyright © 1998 – 2019 TENCENT. ALL RIGHTS RESERVED. 腾讯公司 版权所有
+                <br>
+                Copyright @ 2017 NEOPLE Inc., ALL RIGHTS RESERVED
+                <br>
+            </div>
+        </div>
+    </div>
+    <!-- 引入详情页的js -->
+    <script src="../src/script/details.js"></script>
+    <!-- 引入放大镜的js -->
+    <script src="../src/script/mag.js"></script>
+</body>
+
+</html>

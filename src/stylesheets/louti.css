@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'microsoft yahei';
+}
+html,
+body {
+    width: 100%;
+}
+
+#loutinav {
+    width: 35px;
+    position: fixed;
+    top: 100px;
+    left: 50px;
+    z-index: 4000;
+    border: 1px solid #ddd;
+    display: block;
+}
+
+#loutinav ul li {
+    width: 35px;
+    height: 32px;
+    border-bottom: 1px dotted #DDDDDD;
+    list-style: none;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 0;
+    background: #bbb;
+    color: #fff;
+}
+
+#loutinav ul li span {
+    width: 35px;
+    height: 32px;
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#loutinav ul li.last {
+    background: #bbb;
+    color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+#loutinav ul li.active span {
+    background: orange;
+    color: #fff;
+    display: block;
+}
+
+#loutinav ul li:hover span {
+    /*移入变成红色*/
+    background: orange;
+    color: #fff;
+    display: block;
+}

@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.big{
+    width: 100%;
+    margin: 150px auto;
+}
+.all{
+    width: 480px;
+    height: 643px;
+    margin: 0 auto;
+}
+.welcome{
+    font-size: 44px;
+    margin-bottom: 20px;
+    font-family:  -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+}
+.every{
+    font-size: 28px;
+    margin-bottom: 64px;
+    color: #333;
+    font-family:  -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+}
+.name{
+    width: 438px;
+    height: 50px;
+    border: 1px #aaa solid;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #bbb;
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+.pass{
+    width: 438px;
+    height: 50px;
+    border: 1px #aaa solid;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #bbb;
+    padding: 0 20px;
+}
+.btn{
+    width: 478px;
+    height: 60px;    
+    line-height: 60px;
+    font-size: 24px;
+    border: 1px #3083ff solid;
+    background: #3083ff;
+    border-radius: 4px;
+    box-shadow: 0 5px 8px 0 rgba(24,95,255,.1);
+    color:#fff;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 50px;
+}
+.logo{
+    width: 70px;
+    height: 83px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: url(https://4.url.cn/zc/v3/img/logo@2x.png);
+}
+.QQlogo{
+    width: 70px;
+    height: 83px;
+    position: absolute;
+    top: 20px;
+    left: 115px;
+    font-size: 45px;
+    line-height: 83px;
+}
+#yourName{
+    width: 438px;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.nameHint{
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 51px;
+    left: 0px;
+    font-size: 18px;
+    font-weight:500;
+    font-family:  -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+}
+#yourPass{
+    width: 438px;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 20px;
+    position: relative;
+}
+.passHint{
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 51px;
+    left: 0px;
+    font-size: 18px;
+    font-weight:500;
+    font-family:  -apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+}
