@@ -1,5 +1,4 @@
-!function ($) {
-    class fdj {
+   class fdj {
         constructor() {
             this.wrap = $('.wrap');//最外层div
             this.spic = $('#spic');//小图
@@ -98,5 +97,6 @@
 
         }
     }
-    new fdj().init();
-}(jQuery)
+    export{
+        fdj
+    }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>购物车</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
     <meta name="keywords"
         content="DNF周边商城,周边商城,游戏周边商城,地下城与勇士,DNF,觉醒,冒险家,鬼剑士,格斗,格斗家,神枪手,枪手,圣职,阿拉德,勇士服装,游戏模型,配饰,生活用品,典藏礼包,周边商品" />
     <meta name="description" content="DNF周边商城有最权威的官方认证，最上乘的商品质量，最丰厚的游戏礼品，最贴心的售后服务，为您提供愉悦的商城购物体验。" />
@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="stylesheets/cartlist.css">
 </head>
 <body>
-       <!-- 引入jquery -->
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
        <!-- 顶部的背景图 -->
        <div class="topUrl">
            <div class="bg"></div>
@@ -219,18 +217,6 @@
             </div>
         </div>
 
-         <!-- 购物车  -->
-         <!-- <div id="container" class="cart">  -->
-       <!-- 购物车主体 -->
-        <!-- <div class="buyshop">
-           <ul class="buytop clearf">
-
-               <li class="li-inp">
-                   <div></div>
-               </li>
-           </ul>
-       </div>
-        </div>  -->
 
 
 
@@ -329,7 +315,7 @@
             </div>
         </div>
     </div>
-        <script src="script/jquery.js"></script>
-        <script src="script/cartlist.js"></script>
+        <!-- 引入js -->
+        <script src="../dist/script/bundle.js"></script>
 </body>
 </html>

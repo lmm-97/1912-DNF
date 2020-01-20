@@ -1,5 +1,4 @@
-//数据接口:http://10.31.152.18/DNF/php/dnfbig.php
-; (function ($) {
+
     class renbig {
         constructor() {
             this.bigAd = $('#bigAd');
@@ -22,7 +21,7 @@
                 })
         }
     }
-    new renbig().init();
+
 
     //左右
     class renzuo {
@@ -51,6 +50,8 @@
                 })
         }
     }
-    new renzuo().init();
+    export{
+        renbig,
+        renzuo
+    }
 
-})(jQuery);

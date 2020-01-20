@@ -1,5 +1,4 @@
-//数据接口:http://10.31.152.18/DNF/php/dnfdata.php
-; (function ($) {
+
     class render {
         constructor() {
             this.section_1 = $('#section_1');
@@ -27,5 +26,7 @@
                 });
         }
     }
-    new render().init();
-})(jQuery);
+    
+    export{
+        render
+    }

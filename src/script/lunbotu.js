@@ -1,52 +1,54 @@
-;
-(function($) {
-    var $lunbo = $('#lunbo');//整个div
-    var $picli = $('#lunbo ul li');//图
-    var $btnli = $('.allDiv ol li');//西方小圆圈
-    var $left = $('#left');//左箭头
-    var $right = $('#right');//右箭头
-    var num = 0; //当前点击的索引
-    var $piclilength = $picli.size();
-    var timer = null;
+class lunbotu {
+    constructor() {
+        this.$lunbo = $('#lunbo');//整个div
+        this.$picli = $('#lunbo ul li');//图
+        this.$btnli = $('.allDiv ol li');//西方小圆圈
+        this.$left = $('#left');//左箭头
+        this.$right = $('#right');//右箭头
+        this.num = 0; //当前点击的索引
+        this.$piclilength = $('#lunbo ul li').length;
+        this.timer = null;
+    }
+    init() {
+        let _this = this;
+        this.$btnli.on('click', function() {
+            _this.num = $(this).index();
+            _this.tabswitch();
+        });
 
-    $btnli.on('click', function() {
-        num = $(this).index();
-        tabswitch();
-    });
+        this.$right.on('click', function () {
+            _this.num++;
+            if (_this.num > _this.$piclilength - 1) {
+                _this.num = 0;
+            }
+            _this.tabswitch();
+        });
+        this.$left.on('click', function () {
+            _this.num--;
+            if (_this.num < 0) {
+                _this.num = _this.$piclilength - 1;
+            }
+            _this.tabswitch();
+        });
 
-    $right.on('click', function() {
-        num++;
-        if (num > $piclilength - 1) {
-            num = 0;
-        }
-        tabswitch();
-    });
+        this.timer = setInterval(function () {
+            _this.$right.click();
+        }, 3000);
 
-
-    $left.on('click', function() {
-        num--;
-        if (num < 0) {
-            num = $piclilength - 1;
-        }
-        tabswitch();
-    });
-
-    function tabswitch() {
-        $btnli.eq(num).addClass('active').siblings($btnli).removeClass('active');
-        $picli.eq(num).animate({ opacity: 1 }).siblings($picli).animate({ opacity: 0 });
+        this.$lunbo.hover(function () {
+            clearInterval(_this.timer);
+        }, function () {
+            _this.timer = setInterval(function () {
+                _this.$right.click();
+            }, 3000);
+        });
+    }
+    tabswitch() {
+        this.$btnli.eq(this.num).addClass('active').siblings(this.$btnli).removeClass('active');
+        this.$picli.eq(this.num).animate({ opacity: 1 }).siblings(this.$picli).animate({ opacity: 0 });
     }
 
-
-    timer = setInterval(function() {
-        $right.click();
-    }, 3000);
-
-    $lunbo.hover(function() {
-        clearInterval(timer);
-    }, function() {
-        timer = setInterval(function() {
-            $right.click();
-        }, 3000);
-    });
-
-})(jQuery);
+}
+export {
+    lunbotu
+}

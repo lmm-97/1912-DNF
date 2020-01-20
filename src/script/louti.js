@@ -1,4 +1,4 @@
-; (function ($) {
+
     class louti {
         constructor() {
             
@@ -45,5 +45,6 @@
             });
         }
     }
-    new louti().init();
-})(jQuery);
+    export{
+        louti
+    }

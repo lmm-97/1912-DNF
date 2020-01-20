@@ -1,5 +1,3 @@
-;
-(function ($) {
     class Details {
         constructor() {
             this.sid = location.search.substring(1).split('=')[1];//获取的sid
@@ -64,5 +62,6 @@
             });
         }
     }
-    new Details().init();
-})(jQuery);
+export{
+    Details
+}

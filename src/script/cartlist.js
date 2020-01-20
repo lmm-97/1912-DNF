@@ -1,5 +1,3 @@
-;
-(function ($) {
     class Cartlist {
         constructor() {
             this.itemlist = $('.item-list');
@@ -197,7 +195,6 @@
 
 
     }
-
-    new Cartlist().init();
-
-})(jQuery);
+export{
+    Cartlist
+}

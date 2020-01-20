@@ -1,5 +1,3 @@
-;
-(function ($) {
     class Registry {
         constructor() {
             this.name = $('.name');//用户名框
@@ -97,8 +95,9 @@
             });
         }
     }
-    new Registry().init();
-})(jQuery);
+export{
+    Registry
+}
 
 
 

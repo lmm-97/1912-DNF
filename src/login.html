@@ -5,60 +5,15 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>QQ用户登录--DNF周边商城</title>
+    <title><%= htmlWebpackPlugin.options.title %></title>
     <meta name="keywords"
         content="DNF周边商城,周边商城,游戏周边商城,地下城与勇士,DNF,觉醒,冒险家,鬼剑士,格斗,格斗家,神枪手,枪手,圣职,阿拉德,勇士服装,游戏模型,配饰,生活用品,典藏礼包,周边商品">
     <meta name="description" content="DNF周边商城有最权威的官方认证，最上乘的商品质量，最丰厚的游戏礼品，最贴心的售后服务，为您提供愉悦的商城购物体验。">
 
     <link rel="shortcut icon" href="https://img.dnfcity.qq.com/goodsImages/web_img/favicon.ico">
-    <style>
-        #m_qq {
-            width: 640px;
-            height: 100%;
-            background: #fff;
-            position: fixed;
-            top: 0px;
-            left: 0px;
-            background: url(https://img.dnfcity.qq.com/goodsImages/15imgjs/images/bg.jpg) top left no-repeat #190b18;
-            background-size: 100%;
-        }
-
-        #m_qq .m_bar {
-            width: 640px;
-            height: 1000px;
-            position: absolute;
-            left: 0px;
-            top: -260px;
-            /*background:#CCC;*/
-            overflow: hidden;
-        }
-
-        .m_denglu {
-            height: 1000px;
-            width: 640px;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            margin: 0px;
-            margin: 0px;
-            background: none;
-            background: none;
-        }
-
-        .qq_tit {
-            height: 48px;
-            width: 640px;
-            position: absolute;
-            left: 0px;
-            top: 625px;
-            background: url(https://img.dnfcity.qq.com/goodsImages/15imgjs/images/qq_tit.png) top left no-repeat;
-        }
-    </style>
 </head>
 
 <body>
-        <!-- 引入jquery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!--PC浏览器-->
     <div id="pc_qq" style="display: block;">
         <div class="qq_topbar">
@@ -183,9 +138,8 @@
     <!--端口识别end-->
     <script type="text/javascript" src="./QQ用户登录--DNF周边商城_files/stats" charset="UTF-8">
     </script>
-    <script src="../src/script/login.js"></script>
-
-    <audio controls="controls" style="display: none;"></audio>
+    <!-- 引入js -->
+    <script src="../dist/script/bundle.js"></script>
 </body>
 
 </html>

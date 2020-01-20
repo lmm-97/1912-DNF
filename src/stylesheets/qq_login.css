@@ -422,3 +422,44 @@ right_top {
   min-width: 250px;
   max-width: 400px;
 }
+#m_qq {
+  width: 640px;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: url(https://img.dnfcity.qq.com/goodsImages/15imgjs/images/bg.jpg) top left no-repeat #190b18;
+  background-size: 100%;
+}
+
+#m_qq .m_bar {
+  width: 640px;
+  height: 1000px;
+  position: absolute;
+  left: 0px;
+  top: -260px;
+  /*background:#CCC;*/
+  overflow: hidden;
+}
+
+.m_denglu {
+  height: 1000px;
+  width: 640px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  margin: 0px;
+  background: none;
+  background: none;
+}
+
+.qq_tit {
+  height: 48px;
+  width: 640px;
+  position: absolute;
+  left: 0px;
+  top: 625px;
+  background: url(https://img.dnfcity.qq.com/goodsImages/15imgjs/images/qq_tit.png) top left no-repeat;
+}

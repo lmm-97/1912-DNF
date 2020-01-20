@@ -1,4 +1,4 @@
-!function ($) {
+
     class log {
         constructor() {
             this.username = $(".yonghuming");
@@ -27,5 +27,6 @@
             });
         }
     }
-    new log().init();
-}(jQuery)
+export{
+    log
+}
